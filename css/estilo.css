@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+*{box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Oswald', sans-serif;
+} 
+
+/**MENU**/
+
+.menu {
+   width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+
+/** PRIMERA PARTE - CARRUSEL */
+.fondo{
+    background-color: #212529;
+    
+}
+
+.fondo_titulo {
+   opacity: 0.8;
+}
+
+
+
+/**Nosotros */
+
+.imagen{max-width: 100%;
+height: auto;}
+
+.losotro{
+    display:none;
+}
+
+.eldroncito{
+    width: 90%;
+}
+
+.nosotros p{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/** SERVICIOS */
+.fondoServicio{
+    background-color: rgba(241, 239, 239, 0.954);
+}
+
+.sinborde{
+    border: none;   
+}
+
+.fondoOla{
+    background-image: url(/img/olaroja.svg);
+    background-repeat: no-repeat;
+    background-position-y:50%;
+}
+
+.panoramic, .bebas{
+    font-family: 'Bebas Neue', cursive;
+}
+/**Formulario */
+
+
+.boton{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/**FOOTER */
+#footer{
+    background-color: #273036;
+}
+
+
+
+.iconoinferior:hover{
+   transform: scale(1.1);
+   
+}
+
+.copys{
+   font-family:'Montserrat', sans-serif;
+   background-color: none;
+   background-color: #273036;
+
+}
+.copys button{
+    background-color:#273036 ;
+    border: none;
+    
+}
+
+.linkedin:hover{
+    background-color: dodgerblue;
+    transform: scale(1.2);
+
+}
+
+
+@media(max-width:768px){
+    #intro{
+        width: 90% !important;
+    }
+    .eldroncito{
+        display:none;
+    }
+
+    .losotro{
+        display: inline;
+    }
+    .parrafito{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .fondoOla{
+        background-image: none;
+    }
+    .panoramica{
+        width: 70%; 
+    }
+    .carrusel{
+        margin-top:5rem;
+    }
+}
+
+
+@media(min-width:1076px){
+    .chico h6{
+        font-size: 1.5rem;
+        
+    }
+
+}
+
+@media(max-width:576px){
+    .panoramica{
+        width: 90%; 
+    }
+    .carrusel{
+        margin-top:5rem;
+    }
+
+   
+}
+
+
+@media(max-width:504px){
+    .chico h1{
+        font-size:0.8rem;
+    }
+    
+    .chico h6{
+        font-size: 0.5rem;
+    }
+
+    .chico h6 , .chico h1{
+        margin-bottom: 0rem;
+    }
+}
+
+
+@media(max-width:310px){
+    .panoramic{
+        display: none;
+    }
+}
+
+@media(max-width:206px){
+    .fondo{
+        display: none;
+    }
+}
