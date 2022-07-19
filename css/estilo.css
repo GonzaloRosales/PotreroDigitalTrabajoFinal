@@ -146,15 +146,17 @@ height: auto;}
 
 
 .objeto{
-    margin-top: 3rem;
-    animation: flotar 6s ease-in-out infinite;
+   
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
 }
 
 .eldronerojo{
     width: 40px;
     height: 40px;
   
-    animation: flotar 7s ease-in-out infinite;
+    animation: flotar 6s ease-in-out infinite;
     
 
 }
@@ -217,6 +219,16 @@ height: auto;}
         margin-top:5rem;
     }
 
+    .sacar{
+        display: none;
+    }
+
+    .opacidad{
+       background-color: rgba(50, 50, 50, 0.3);
+       
+       
+    }
+
    
 }
 
@@ -254,32 +266,15 @@ height: auto;}
 
 
 @keyframes flotar {
-	0% {
-		
-		transform: translatey(0px);
-	}
-	50% {
-		
-		transform: translatey(-20px);
-	}
-	100% {
-		
-		transform: translatey(0px);
-	}
+	0% {transform: translatey(0px);}
+    
+
+	50% { transform: translatey(-20px);}
+
+
+	100% {transform: translatey(0px);}
 }
 
-@keyframes costado {
-	0% {
-		
-		transform: translatex(0px);
-	}
-	50% {
-		
-		transform: translatex(-10px) scale(1.1);
-	}
-	100% {
-		
-		transform: translatex(0px);
-	}
-}
+
+
 
