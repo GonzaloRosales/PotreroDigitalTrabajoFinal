@@ -23,6 +23,27 @@ body{
     z-index: 10;
   }
 
+
+  .link_menu a{
+    color: aliceblue;
+  }
+
+  .link_menu a:hover{
+    color:  #e82323;
+    transition: 0.3s ease ease-in;
+  }
+
+/**BOTON WSP**/
+
+.boton-flotante img {
+    height: 100px;
+    position: fixed;
+    right: -13px;
+    z-index: 10;
+    bottom:20px;
+  }
+
+
 /** PRIMERA PARTE - CARRUSEL */
 .fondo{
     background-color: #212529;
@@ -50,6 +71,20 @@ height: auto;}
 
 .nosotros p{
     font-family: 'Roboto', sans-serif;
+}
+
+.parpadeo{
+    animation-name: parpadeo;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+}
+
+@keyframes parpadeo{
+    0%{opacity: 0;}
+
+    50%{ opacity: 0,5;}
+
+    100%{opacity: 10;}
 }
 
 
@@ -110,6 +145,27 @@ height: auto;}
 }
 
 
+.objeto{
+    margin-top: 3rem;
+    animation: flotar 6s ease-in-out infinite;
+}
+
+.eldronerojo{
+    width: 40px;
+    height: 40px;
+  
+    animation: flotar 7s ease-in-out infinite;
+    
+
+}
+
+.loultimo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    
+}
+
 @media(max-width:768px){
     #intro{
         width: 90% !important;
@@ -136,6 +192,12 @@ height: auto;}
     .carrusel{
         margin-top:5rem;
     }
+
+    .boton-flotante img {
+        height: 60px;
+        right: -13px;
+        bottom: 0px;
+      }
 }
 
 
@@ -185,3 +247,39 @@ height: auto;}
         display: none;
     }
 }
+
+
+
+/**KEYFRAMES**/ 
+
+
+@keyframes flotar {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-20px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+
+@keyframes costado {
+	0% {
+		
+		transform: translatex(0px);
+	}
+	50% {
+		
+		transform: translatex(-10px) scale(1.1);
+	}
+	100% {
+		
+		transform: translatex(0px);
+	}
+}
+
